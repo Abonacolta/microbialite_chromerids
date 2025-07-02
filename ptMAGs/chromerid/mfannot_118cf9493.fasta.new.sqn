@@ -1,0 +1,1328 @@
+Seq-submit ::= {
+  sub {
+    contact {
+      contact {
+        name
+          name {
+            last "Last" ,
+            first "First" ,
+            initials "F." } ,
+        affil
+          std {
+            affil "Affilation" ,
+            div "Division" ,
+            city "City" ,
+            sub "Province" ,
+            country "Country" ,
+            street "Street" ,
+            email "Name@serveur.com" ,
+            fax "999 999-9999" ,
+            phone "999 999-9999" ,
+            postal-code "X9X 8Y8" } } } ,
+    cit {
+      authors {
+        names
+          std {
+            {
+              name
+                name {
+                  last "Last" ,
+                  first "First" ,
+                  initials "F." } } } ,
+        affil
+          std {
+            affil "Affilation" ,
+            div "Division" ,
+            city "City" ,
+            sub "Province" ,
+            country "Country" ,
+            street "Street" ,
+            postal-code "X9X 8Y8" } } ,
+      date
+        std {
+          year 2025 ,
+          month 3 ,
+          day 9 } } ,
+    subtype new ,
+    tool "tbl2asn 25.8 - LINUX UNIX" } ,
+  data
+    entrys {
+      set {
+        class genbank ,
+        seq-set {
+          set {
+            class nuc-prot ,
+            descr {
+              source {
+                org {
+                  taxname "Genus species" ,
+                  orgname {
+                    mod {
+                      {
+                        subtype type ,
+                        subname "genomic" } } ,
+                    gcode 4 ,
+                    mgcode 4 } } } ,
+              comment "Complete genome" ,
+              user {
+                type
+                  str "NcbiCleanup" ,
+                data {
+                  {
+                    label
+                      str "method" ,
+                    data
+                      str "SeriousSeqEntryCleanup" } ,
+                  {
+                    label
+                      str "version" ,
+                    data
+                      int 8 } ,
+                  {
+                    label
+                      str "month" ,
+                    data
+                      int 3 } ,
+                  {
+                    label
+                      str "day" ,
+                    data
+                      int 9 } ,
+                  {
+                    label
+                      str "year" ,
+                    data
+                      int 2025 } } } ,
+              create-date
+                std {
+                  year 2025 ,
+                  month 3 ,
+                  day 9 } } ,
+            seq-set {
+              seq {
+                id {
+                  local
+                    str "C_0" } ,
+                descr {
+                  molinfo {
+                    biomol genomic ,
+                    completeness complete } } ,
+                inst {
+                  repr raw ,
+                  mol dna ,
+                  length 15481 ,
+                  topology circular ,
+                  seq-data
+                    iupacna "TGGAAACGAGCGTATAGCTACCAACGAGTCGGGGGGGGGTTCAATGCCC
+TCCAGGTCTTATACGCTTTATTTTTGTAAAAAATGTCTGGAGGTAATTCACCCCCCAACCTTATAGTTCGTAGCTATA
+CGCTCTATTCCATTGAGCTACAGACCCAATCATTGCGGGAGAAGAGACTTGAACTCTTAAGGAAGCTCCGTTAGATTC
+TAAATCTAATACGTTTACCAATTTCGTCACACCCGCATTGAGCTCAGTAGGATTTGAACCTACATTAGAAACTTAGAA
+GGTTCCTGTCCTAATCCTTTAGACGATAAGCCCAACCTATATTTATAGGCACTCAAATTTCAAAAACTAGTTTTGTGT
+TAAAAAATTAACAATAAAATCATAGTCACGCAACCATCTTTCCGCTTTTAAGTATTTTCCTGGTGCGAGTTGACGAGA
+GCGCTTTCAAAAGAGCACAGTTAATTCATATCATTCAAGAGCACCATAATAATCATGTAACCGAAAGACTTTTCTGCC
+ACGATAGAAAGTAATACTTCCTAAATTATATCACGTTTGAGCAGAAGCATTATTATTTTGTAAAGCAAGCTCATAAGT
+ACGATAGGCAGCTACTTCAAAACCTGCTCTTTGCAAAAGAGTCCCCATGCTGACTAAAATACGGCTTCTTTGTTTAGG
+ACTATCTTCTAACTTTAACGCTCTTTGATATAATTTTAACGCCACTGCATAAGATCCTTGTAACTGATACGTTAACGC
+CAACCGATAGCATAAAAAACTTTGCTTGTGTGTCTCTGGTGTGGCAACTACATTTGTAATGACATCAGCCAATGAGGT
+CAAACTTTTATCAATTAAATTTACAATCATTTAACAGAAAATCCCTGTTTCAGTATAGGTAGTGAAACACAAAACTTT
+TGTAATGTATGTTTGATGGTACCGGAGTATGTTACGTTTGAGCAAAATATATTTAATTTGAGTTCTAATTCTTTGGTC
+TTTAGTGATTTTATACTTTCCACAAATCAAACCTAACACAAAGTTTTTTTTCTTTTTACTACAAGAAAACAACTTTTT
+TCCTTTAACTTTCACTTTTTTTTTACTACTTTTATTTTGACTTTGCACATTGTTAAGTTGTACAGTTTTGGACCAATC
+TTTTATTTTTAAATATAAACATTTTTCATTTTTAGAAAGAACAAAATTTTTAAGCTTGTATTCTAACTTTCATCCATA
+TAATGTATCGGGTGATTTCAAAGAGCAAAAATACTTATTTAAAAATAACTATCTATCATTGTATAGTCATCTTATAGT
+TTCTTTTTATTTAATTAAACAACAAATAAGATTTTTAGTCGAAGAAATATTTAATCAAAAAGGGATATTACAACAAAA
+TACTCCACAGTTTACAGTTTTATTAGAAAACCCAACAAGTAAAACCCACTTTTCTCCAATGCTTAACCTCCAAAGTTC
+ACAAATTTTTAGTATTTCAAGCACATTAAATAGTTCAGAAAATATAAATTTCTCTTTATTAGATAACAGTGCAAGAGA
+AATACTGTACCAAACTCTTCCTATAAATACACCCTTTTCATTTTTAGGCTGTAACTTAAATTTTACGAAACTTGACGA
+AACTTTTATTTTACACAAAACATCCCTGAAACTGTTAGAAGTTCCACTAAACAATAAATCAACTTGATTAATAAATTA
+TTGAATGAAATCAAAAAACGAGTGAGAAATTTTTTTTTTAAATTTTTTAAGATCTCGTTCTATGTGAAATGAAGATTG
+ACATGAAATTGTAATGAATGCGAGTGTAGTTGATAGTTGAAATTTTTTTAATTATAATTTAACTTTACATACCGAAAA
+TTTTTCCATTCTTTATATTTTTTATTTTTTACTCGTAGGTACATATTTAAATTGTTTCAATTCCATCAAAATAAAAAT
+TTAATAAAACTTTTTTTCAAAAAGCCAATAGTAATACTTAATCTTTGTTAAGGCTAGGAGTTCAAAACCTAAAACACG
+CAAAAGCCCTTATCGTCTAATGGTTAGGACATCTCCCTTTCACGGAGGAGACGGGGATTCAAATTCCCCTAAGGGTAT
+TGTTATAAAATTAAAGACTTTCCGTTAAATATTCCAATTCTTGCACTACTTGAAATCTATCATTAACCAAAGGAACTT
+GTTGTCTATTTTTTGTAAAATATTGTGAATTGCGTGGTGTCCCAAACGCTTTATATGGAATTCCAGTTTTAACAAATA
+AAAAACCGGTTAAAAAAATACAAGGTATAGTAACAATATGAATTAACCAATAACGTACACTTGTAAGAATTTCAGTAA
+ATGGGCGCTCTCCTGTAGATCCTCCTGTAATAATTTTTTGTTGCATTGTAAACTTTTTATCACTTCAATATAGTATTT
+AGCATATAACTCTACAGAAAAAAGCTTATATTTAATACACTAAACCCATACTAGAATAGGTTTCGGTTCCCAATTCTA
+CCCGAATACTAAGGTAATCAGTTGGGCAGGCTGTTTCACAGCGTTTACATCCAATACAATCATATAAAGTGTCCGCAC
+AAGCAATTTGTAATGCACGACAATGATCTCATGTTGCCATAGTTAAAACTTCAGTTGGACAAGCACGTACACATTGGG
+TACAGCCTATACAAGTCGTATAAATAGAAACATTATGCATTTCTGTTTAACTGATTCATTATAACGCGCACAAATGGA
+TTTTTTTTTGCTTTACCCTTAATTTTTTATAAAAACATATTTTCAACATACATAACAAAATTTTTTGTATAACTACTC
+TTAATATAAAATAATTGTCTTTGAATAAAATTGGTCACAATAAAAAAAAGACTCTTGTTTTGCCATTGTTGTAAAAAT
+AAATTTTCAATAAAAGTATCATAAAAATAAATATAAATATTCCATTGATTATCCAAATATTCTAATAAAAAACGAATT
+TCTTGTTGATAATAAAAAGATGTAGTCACCCAGGATAATAAAATTCATTTATATACGACATAATAAATTCAACGATCT
+AATAAAGAAAAACAATTATTAGGACTGACGGGGTCAAAAGTGGTCTTTTCTCCAAAGGCCTTTTTTGTTTTGTTTTTC
+CTCGTGTAACAAACTAATAATTGTTTTAATATAAATACATCTACCGCTCTATAGGTTCATAAGTCGTTGCGCATTTTT
+TGCATTGCTTTATAAAGCTGGTTAGCGACCAGTTTTCAAAGACTGCGTTGCTTTCTAGATTCATAATTTAACGAGGTT
+ACATAAATTTGAATAGGATTTATAATAGTTTTTTCAACTTCTATATTTGATTTTAATCAGTTTTGTCCAAACAAGTTA
+TAAAAACCTAATTTTTTTAATACTTTTTTATTAACTTGTTTAAAAAATAGATCATCTAAACTTACATAAAGTTGAGTT
+TTCCCTGGGTTACCTTGTCTACCACAGCGACCAGCAATTTGTGCATCCACTCGGGGTGTAGAACTTTTTTCTGTATTT
+ATCACAAATAAACCACTATTTTGCAAAATTCAATTTGTTTCATTTAGTTGCAAAAGTAGAGGTAAAAAGCCTAAACCT
+GCTTTTCCGTAATTTAAAAAAAGTCAGTTTCCTTTAACTTCATTAAAATTAGAACCGTAATAATTATAAGCTTCTTTT
+AGTGATAACGCTTTTATACAATTTTCTTTTAAAAATAATCTTGAGTTATTTTGTAAGAAATTAGCAAAAAAAATAGGA
+TTTTGTATATGATTCGAAGAACAATTAAGCAAATCGACTAATCTAACATTATTATAGAGAATATTTCCCCCTATTAAA
+ATGTCTACCCCACGACTCAACATTCGAGTACTTAATGTAATACAATGCTTCCGCCCAGCCATACAAACAATATTTTCT
+TCCTCTTTGGCATAATCAGGCTTTGCATTAACTAATTGATGGGGTATTTTATTATATAAATATAATTCAGATAATAAT
+TCTGATTTATCAATACTTGAAGTAACAATTAATAATGGTAAACCTTTTTCTAAAGAAGAACTTCGAGAATTAATACTA
+ACAAGTCTTCACTTATCTAGTTCAGTTTGAGTAATTACTGTATTTAATGTTTCTCGAAAGGAAGGTTTAAAAGTTGGT
+ACTTGTTTAATCGACAAAGCAAAAATACTTAGAAATTCATTTCGGGTTGCATCAGTGGTACCTGTCATTCCAGCTAAT
+ATTGGGTATAAATTATATAAATTTTGATATGTAATAGAAGCTAATGTTGAAAAATCGGGATTAACTGGTACACATTCT
+TTACTTTCAACTGCTTGATGTAACCCATTATTTCATCTTCTCCCTGGAAGAATCCTTCCCGTTAAACTATCTACTATA
+TAGATAGTTTTATTTATTAAAATATAATCGCGTTGATTTCGATAAAAAATTCTAGCTTTTAAAATATTTAACAAAACT
+TGGATTCAATTATCTATTTTTATAAGAGTTTGTTTTGTATTTTTTGTTGAATCGATATTTAATAACATTTTAATTAGC
+AACACCCCTTTTTGGGTTAGATAAACTAAATTAAGATTATAATCTAATAAAAAATCTTCTTGAAATTTAAGAAATTTT
+ACTAGTTCATCTAAGATTAAGAACCAATTTAATCTACTAACAGATTCATTACTTGTAGTACTTAAGATCAAGGGAGTA
+ACCGCACTGTCTATTAAAATGGAGTCAATCTCATCTACTAAACCAAAAAAAAAAGGTCGCTGAATACGCTTTCCATAA
+TTTATAACACGCGAATCTCGCAAATAATCAAAACCCAACTCCGTATTATTTAAATAAGTAATATCATTAAAATATTCT
+TTTAATCTTTTATTAAGTGCAGTAGAACTTGTTATTAAGCCAACACTTGATTTCATTCAAGAGGATAACGAAATTAAT
+CAGTTTCTATCACGTTGTGCTAAATAATCACTTGTCGTCAACATATGTAATCCATTTTGTTTCGACGAGTGTAAGAGA
+AGAGCTAATACTGAAGCTAGCGTTTTTCCCTCACCCGTTTTCATATTAACTACCGTACCTAAATGTAAGTAAAGAGCA
+GCTAAAATTTGAGTGTCGTAGGCTAAATACTTACTAGTTTTATAAATTAAAGTTTGGAAAAGAATTAATTTTTGCAAA
+ATTTTATTAAAAGAATTGCGGTTATTTTGATAAAATTGATATTTAGTTAATTTCTGTAAATCTTTCTTGGTAAATGCA
+CTGAGGTATTGACGATAAACCTCGCTTTGTGAGAAAATTGTTTTCAAGTATATAAAAAGCTGTCTTATCTTGTTTAAA
+ATTTATAGGCAAAATAAAAGTCTTGTATAACTTTAATAGAAAAATGTAATGACAAATCTCTGAATGTAAAATTTTTTA
+TGATAGAAAATTGTAACTTATTTAACTTCATTTTTATTATTTTGTGTGGATTAAGTACAAAATTTTGTTGAATTAAAT
+TTTTTTTACTATAAATGATTTTAATAAAGTTTTCGGGACTTCCAAACACATAAGATCTTAGAAGGCTATAACAACTCA
+TTTGACTTTTGTACAAATTCTTTAATAGTAATACTCTAATACATTTAAAATTTTTTGAAACGGAATGTAGCACAGCTT
+GGTAGTGCGCCTGGTTTGGGACCAGGAGGCCATAGGTTCAAATCCTATCATTCCGAATAGGGTAAGATTTAATTAAAG
+AAATTATGTGTTCAATATTTGTTTTATATAATTGAACCGAATTTTGTTCAGAGAACTAGTTACGGGAGCAAACTTTTC
+TCCATATTTAAGATATCAATAGCGAAAGGCACAGCTCGAATTTACTAGGCGAAGTCATTTTCTTTGTATGCTTACATA
+ATCCTTCTTTTTAGGATTTATTCGTTTTAAATTAATTTTCCGCGATTCTTCTGATTTTAATTTTATATACTTACAAGG
+AACTTCTTTAAACGTAAATTGACGATCTACAACTTTGTCGTATTTTCAAAAAAGATAGTTTGACATAAAAGAGCGATT
+ATAAAATGAGTGTAGAGCAAAATTACTATTGTTGTGTTTTGTAGAATTCTGATAAATTTGTTGTATTAGATTCAAATA
+AGATTTAAAAGCACTTATTTTTATCCAGCAGTTAAATGGATTCCTGTAGGACTTTTTCCTAATTTCATTAAAAAGCTT
+TTTTGTTTTTTTAACACTCTTACTAACTCGCAAACGTCTTTGACGTAATAAATTTATGTTTCTGTTTTTACTTTAAAA
+TCCTTTTCTAGGAAGTATTAAACATACGTAAAATGACCATAAAATGAGATATCGCTTTAAAATACTTAGATAATATTG
+GACTTGAACCAATGACCAGCTGCTTGTAAGGCAGTTGCTCTACCAACTGAGCTAATTATCTTGAATACAAAAAAATTC
+AAGATCTTTATAAAAAGATGATTAAGCGATTGCTAAATCTAAAGGAAAATTATGAGCATTACGCTCATGCATAACCTC
+CATTCCTAAGTTAGCACGATTTAAGATATCAGCTCAACTTGAAATTACACGCCCTTGAGAATCTACAATAGATTGGTT
+GAAGTTAAATCCATTTAAATTGAAAGCCATTGTACTAATTCCCATTGCTGTTAATCAAATTCCTACTACAGGTCAAAT
+AGCTAAAAAGAAATGTAATGCACGAGAGTTGTTAAAACTCGCAAATTGGAAGATTAAACGTCCGAAATATCCATGTGC
+TGCAACAATATTATAAGTTTCATATTCTTGCCCAAATTTATATCCATAATTTGGAGACTCATCTTCGCTAGTCATTGA
+AATTAATGTTGAACTAACTAGTGATCCATGCATTGCACTGAATAATGAACCACCGAAAACTCCAGCTACACCTGCCAT
+ATGGAAAGGGTGCATTAAAATATTATGCTCAGCTTGGAAAACTAGCATAAAATTAAATGTTCCTGAAATTCCTAATGG
+CATTCCGTCAGAAAAGCTTCCTTGTCCAATAGGGTAAACTACAAAGACAGCAGAAGCTGCTGCTACTGGTGCAGAGAA
+AGCAACAAAAATTCATGGACGCATTCCTAAACGATAACTTAACTCTCATTCACGCCCTAGGTAAGCACATACACCAAT
+AAAAAAATGTAATACAACAAATTGGTAAGGCCCTCCATTGTATAATCATTCTTCGATACATAAAGCATCTCATACTGT
+ATATAAGTGCATTCCAATAGCATTTGAACTTGGTACTACAGCCCCAGAAATAATATTATTTCCATATAATAAAGATCC
+TGAAACAGGTTCACGGATCCCATCGATATCTACAGGAGGTGCAGCAACAAAAGCAGCAATAAATACAGAAACTGCTAA
+CAATAAATTTGGGATCATAATTAAACCAAATCACCCAATGTATAAACGACGCTCTGTGTTTTGTACAAAATTAAAAAC
+TGAACGTGCAATATTACGTACTCAAGTTAGATTCTTCTTAGATTTCATAGACCAAGAAGGTTTTCAAGAGTAAAAAAA
+GAAAACTTATAAAAATAAAAAAGGTTTTTATCACCCCCACTGATTAATAAAATCTAGTGGGAATTTGTTCTATGTCTT
+TTTGGTAAAAAGGTTGTGATTGAAATACCTTTCCGGTTGTAAAATTATAAATCACTAAAAAACATAAAGCACTTAAAA
+CTAAATAATTATACGCAATGAGAACTAAACTTACATGCCCATAGAGTCATTGAGAATAAAATATCGGAGAAATAAGAT
+TTAATAGTTTTGAGGAAGCTGGAATACTATTTTGAGTAAACAAAATTAATCATCCTGATAAAGTAGCAAAAAATAAAG
+TTTCTAATGAAACTTCAAAAAGAAATAACTGACAAAGACTTCTACCCAAAGTAACAACAAAACAAATAATAATAAAAA
+AACGACTAGCTTCATACAAATTTGTAATACTTAAAATATTATTATGGTTACTAATAAAGCTTAATTCAAGCAAGAACA
+AGTTTAGAATTAAACCAAGTAGACTAACATACATTAAATCATATATACACTTTTTATAACCTCATGGTACATTTTTGG
+AGAACTGAGTTGTAAAAAACTTAAATTTTAATTGAATTTGTCATCTAAAATTATTTTTGTTAAATATAATGAAGTTGG
+CTCATAATAAAATAATTTACTATCATCTAAAAGACAAGTGATTTTAGCGTTCTTCGTATTCTACTTGAGGTATGATTG
+GGGTTTCACGAAATAAAACAGCTGAAATTAATGTAATAAGAGTTCCAAAAAGTAACATACAGTATACCACAGCTTCTA
+TAACTTTTTTTATATGTTTTACTTAAAATAAAATAAGAAACCCACAAAAATGCATTTAATAACTATTTTTTTTAGCGG
+GTTTTTAGATAAAGGTACTGCTGTAGGTTGCCGCTATCCTTAGTAAGATTCACCTAAAATTATGTGAATCTATTTTAA
+AATAGAAAATTCAAAATCCAACTTAAAACCTCTAAAATTTTATATTATTAAGAAAAGTTTGCTACATTTTTTACAAAA
+CTTAGACATCTTTTTTAGCTATCCTATAATCTATAGATATTATTAGTTTATAAAAAGCTAAATCTGTTATCTTAAGGA
+GAACTTCCCACTTAGATGCTTTCAGCGGTTATTTCGATCATATGTAGCTACCCAACGACTACCTTTATCAAAAAAATC
+TTTCAAACTTAGATAATTGGTACACCAGAGATATGCACTTTTCGGTCCTCTCGTACTAGAAAAATACCCTTTCACAAA
+TTTTACGTCCACATTGGATACGGACCAAACTGTCTCGCGACGTTCTGAACCCAGCTCACGTGCCGCTTTCATGGGCGA
+ACAGACCAACCCTTGGGACCTACTTCTGCCCCAGGATGCGACGAGCCGACATCGAGGTGCCAAACCTCCTCGTCGATA
+GGAACTCTAGGAGGAGATGAGCCTGTTATCCCTAGAGTAACTTTTATCCGTTTAGCGACGGCCTATCCTCTAAGCACC
+GCCGGATCATTAAGACCAACTTTCGTTCCTGTTTAATATAACATTCTTACAGTCAAGCTTTTTTGTACCTTTAAGCTC
+TACAAACGGTTTCCGACCGATTCTGAAAAAACCTTAGTACGCCTCCGTTACTTTTTAGGAGGCGACTGCCCCAGTCAA
+ACTATCTTATTAATATTGTCCAAAAGTTATTTATAATCTTTCGTTAGAAACTCCACTGTAAACCAAGTGGTATCTCAA
+GGTTGAAATTACTTTCTCCCACTTATCCTGCATAGTAACAACAAAGTTTCCATATCAATTTATAGTAAAGCTTCATAG
+GGTCTTTCTGTCCTAATGTAGATTATCCGCATCTTCACAGATATTGCTATTTCACCGACTTCCCCTTTGAGACAGTGT
+TTAAGTCGTTACGCCTTTCATGCGGGTCGGAACTTACCCGACAAGGAATTTCGCTACCTTAGGACCGTTATAGTTACG
+GCCGCCGTTCACCAAAGCTTGTTTAAAAAGCCTTTTACACTTTTTAACCTTATAGCTGATTGGCACCGGGCAGGCGTC
+AGCCCCCATACATCATTGTTAAATTTTGCGGAGACTTGTGTTTTTGATAAACAGTCGCTCAAACCTCTTCACTATGAC
+CTTTCATTGGTTTATGTAAAGGTACTCCTTATCCCGAAGTTACGGAGCTAATTTGCCGAGTTCCTTAAAGGAGATTAT
+TTCGAACCTTTTGTTTTATTCAAACTTACCCATTTGAGTCAATTTACGGTACGGAAAACAAATAACTTTGAAGTTTTA
+TTACATAAATAGTATTGCCATAAAGTAATTATATTTTACTCTTTATTACCTCTTATTTCAATTAAAACTCACGTTTCT
+TATAGCTTTTCTTGGACATTATATTATAAAAAACCACAATATAAAGCCGTCACTATTGAAAAGATATTTGTTTGTTTT
+TATTTTTTAAAAAAAAACCCATCAATTAAAACCACAGGTTTAATTTTAGGCTCCGACTAACCCTTTACGGAAGATCCT
+TTTGTAAAGGAAACCTTAGGTAATCAAGGCGTTGGATTCTCACACTCAACGTTAACGTTACTAAACCCAATAGTCTCA
+CTTCTAAAAAAATAAACTGATTCTTAGTTAAAAAATTTACCAAGAAGTTATTTTCATTGTATTCATTTTCATGAATAG
+GATGAAGGAATTTTTTAGAACGCTCTTTTACCGAATAATTTAGTTATTCTCATCAAGTCGGCTTATACTTTAGCTCCT
+TTAATTTGGGGCGCAAAATAACTAGACCAGTGAGCTATTACGCACTCTTTAAAGGATTGCTGCTTCTAAGCCAACCTC
+CTGGTTGTTGTTGTTATTTCACCTGCCTTTTTTATGAAGTATAAATTGAGAGCCTTAATGAATGATCTGGGTTGTTTC
+CCTTTACACCAAGAAAATTCTCTCTCTTGGTGTGACTTCTTTATAACTGGAGTTGAAGTTTGGAGTTTATCTTACTAT
+GATACCAACCGGCCCATCGTAAAATAGTGCTCTACTTACAATATTATCATAAAGAGCTATGCCTCAACATATTTCAAA
+GAGAACCAGCTAGGTCTAAGTTCGTTTAGCATTTCACCACTAATCACATTTCCTCCGATGATTTTGCAGCATCAACCA
+GTGCAGACCTTCGTTTGTTTTTACCCAAACTGCGTCTTGAACATGATTAGGTCACTTAGATTCGGGTCTATACAAAAA
+GACTTATGTCTTAATTGAAGACTCGCTTTCACTAAGGTTCAAGTAATTAACTCTAACCTTGCCAAAATTGTATAACTC
+ACTGGGGCATTCTTCAATAGGCACATAGTTAGTTTCTAGAACCTTCTATTGAATGTGAATTATAGATTTCAGTATTCT
+TTTTCATTACCTTCTTCAGGCGCTTTTTCAACTTTCCCTCACGGTACTTTTCACTTTCGGACATTTAGGAATAACTTA
+AAATCGAATAAAATAAAATTTTTACAGGTATTTTATATTATTTTATTTTTACAAAGAGGTTTTTGTCTATTCAACCAA
+GATTTCACTTTTCTTAGTTTACAAATTTGAAGATTTACTTTTTAAATCTAAAATACATATTCGTTCGCTCGCCACTAC
+TAAAATACTCATTGTTATTTGACTTTCCTTTAAGTACTAAGATGTTTCAGTTCCTTAAGTTAGCTCTCTAATGTCAGT
+TTAACAAAAGAGTTGTAAGTTTCCTTATTCGGAGAATTTCAGGTGCTTGAACATTTTACTTTTTGGAATTTTCGTATT
+AAGTTACGCCTCCCAGGTCACCTAAACTAAACTCAACCCAAGTATTTTCATCTACCTCAAAATTTCGTTAAATAAACG
+TCCTTCATCGCTTCTAAATGCCTAGTAATCCACCTATAATTCTTAAGTTTTAGAAAGTTTTTGTTACACAAAAGTTAA
+TTATCTTTTTACAGTTAACTAGTATTACCATTTTTCATGGAAATAGGTTAATCTTCTTTACAAGATTCTCTTGTTAAA
+TAAGTAGCTTAACCCAAAACTATTTTACAGACCAAGTTCCAAAGGAATTGGAGTATTACCAGTTTTTAAAAATTTCCA
+CTAATCGAGCTTTTTTAAGCTTAAGTATTCCAAAGTATGATCAAGTAATTTTAAATATTAATATTTTCCAGCTGCACC
+TTCCAGTACCGCTACCTTGTTACGACTTCACCCCAGTCACGAGCATTTTAATCTATACCACTTATGTATTTTTAAAAA
+ATACCCACTCCCAGGGTGTGACGGGCGGTGTGTACAAGGCTCGGTGACGTATTCACCGCCGTAATGGTGACCGGCGAT
+TACTAGCGACTCCAGTTTCATGTGAACGAGTTTCAGTCCACAATCCAGACTGAGAATACCTTTTAAGATTAGCACACT
+CTTAAGAGTTTGCTTTGTGTTCTTTATAAAAACGCAAAAACTTATTGTAGTATCCATTGTAACACGTGTGTAGCCCAG
+GGCATAAAGAGCATGATGACTTGACGTCTTCCTCCGCTTAAACTCTTTTAGTGTAAATTAATATGTTATAGAGTCAGT
+TTTCAAGACATAGGAACTTGAAATAAGGGTTGCGCTCGTTAAAGGAATTAACCAAACATCTCACGACACGAGCTGACG
+ACAGCCATGCACCACCTAACCTAGAAAGAAAGTTCTGAAAGATTAAATCTAGCTTTTTTTCGTTGTTACTTTACGTAA
+CAACTAGGCTTCTAAGCTCTGGTAAGATTTTTTGCTTTGCATCAAATTAAACCACATGTTCCGCCGCTTGTACGAGCC
+CCCGCCAATTCCTTTGAGTTTCACCCTTGCGAGCATACTCCTCAGGCGGAGTACTTAATGCGTTAGCTTAGATACTGA
+AAGAATTTAGTTTAAAAATCTATACTTCCAACATCGAGTACTCATAGTTTATGGCTAAGACTACTGGGGTCTCTAATC
+CCATTTGCTCCCTTAGCTTTCGTCAAAAGTGAGTGTCAGTTAAGAACTAGTAAAACGCTTTCGCCATTGGTCTTCCTC
+CTAGTATCGCAACATTTTACTATTCCTCCAGGAGTTCCTTTTACCTCGTTCCAACTCAAGTTAAATAGTAATTTTCTC
+TTTTTAAAAGTTAAGCTTTATGATTTAAAGAAAAACATAAAAAACCACCTATTGACGCTTTACGCCCAGTAATTCCGG
+ATAACGCTCGCATCCCCTGTCTTACCGCGGCTGCTGGCACAGAGTTAGCCGATACTTTCATTTTAGATTAGTCATTAT
+TCTTGATCTACGAATAGAAGTTTACAACCCCCTGTCCCCAGGGATTTGGCCTTCTTCGCTTCACTCAGTGTCACTTTG
+TCAGGCTTTCGCCCATTGCAAAATATTCCATACTGCTGCCTTCCGTAGAAGTTTGGGCCGTGTCTCAGTCCCAATGTG
+GTTGTTCATCCTCTCAGACCAACTACCGATTATCGTCTAGGTAAACTTTTTTTTCACCTACTAACTAATCGGATATAA
+GCTTCTTTATAACCGAACTTTTTCGTTTCTTTTTAATGCCTACATAGGCTTTATAAGGAATTATCAAGAGTTTCCTCT
+TATTATGCCTTAGTTAAACTTGAATTCTTATACTATCCTCACCCGTTTGCCATAAAAGAATAAACTTTTATTAAACTT
+GCATGTATTATATACACTGACTCGCGTTCATCCTGAGCCAGGATCAAACTCTTATAGATACCTCCAGAAACCTTAGAA
+GGTTATAAAATCTCGTCTATTAATTTTAACTAAACCAACGATATTTAACAAATCTAATAATTATTAGATTAATTAATT
+ATGTTAATTATAAAAAGTACACTGCATGTAAATAAGAGTTATTACACATGGGATATAACCTTGGATCGCTTCGTAGAC
+GATATTTAGCTTTCTCTTTAATAAATCTTAAATTCATTCAAGGATGAGAACCTTTTTGAATTGGAAGTTACATTTGTG
+ACATGGGTCATTCAGTAGTTTCTCTTATGCTGGTTCTAGGGTTTCAGCGTACATAGTGTCCGCTAATTGCGAGTCCAA
+CCTTCCTTATTTCTGCAAAGTTTTTTAGGGTCATTATTGATATGCTTACTGGAAGTTAGTCATGTTTGTCTCCAGATG
+GAGTCAATACATCATTTCTTAACCAGATTAAAGAGAATATGGTAGTACAAAACATATAAATATATGTATATAATTACC
+TTAATTTTCAGCATCTTTTTCTTGTCAAAACTGTTAATTTTATAAAGGTTTCAAACATGACTTTGGCATAGACTGCTT
+AAATACCTTCACGCCCTAAAATAACAAAACTAATGGAAGCAGCTAATAAAAATCCTAACACTTGCAGCATACCTATAT
+TTAAAAATTCAGAATCAACAAATACTTGTCAATATAACGACAGTAAAGTATGAGAAAAAACAACCATACAATAAAAGT
+AAAGAATTTTTTAACTAAAAAAATATATAGAGTAAATCGGGTTACCTGAGATTCGAACTCAGAACTACTCGGTTAAAA
+GCCGATTACTCTACCCTTGAGTTAGTAACCCAAGGTAAGCAGGGTCGGATTTGAACCGACGAAGATCGCAATCTCCGG
+ATTTACAATCCGTTCCTTTTGACCACTCAGGCACCTGCTTCGAGTATTGGGCCCTCCCTAAATAGGATTTGAACCTAT
+GACCTTTCGGTTAACAGCCGACTGCTCTAACCGCTGAGCTATTAAGGAAAGGATTTTTGGTAAAAAGTTTGACATTAA
+GCTTAACATAAGCATAACGGAAATAGGATTTGAACCTATGACCTCCGGGGTATGAACCCGGCGAGCTAACCAATCTGC
+TCTATTCCGCTTCGTAATAACGGAAAAGATGGACTGAGATTTGAACTCAGGAGACCAAAAGTCCATCTGATTTCAAAT
+CAGACGCGTTAGACCACTCCGCCATCCATCCACTTTAAAAAAGAACTAAACCTCTTTCTTTTATAAGACCAATAAACT
+TTAGTGTGACCTTATAAAAAGCTAGTTGTTTAAGTTATGTATAATAGAAATGCTAAAGTTAGATTATATCATCGCTAA
+TGTAGCTCAGTGGTAGAGCAACTGATTTGTAATCAGTTGGTCGTAGGTTCAATTCCTATCATTAGCTACTTAAACTTA
+TAGAGCAATTAGCTCAGCGGTAGAGCGCACCTTTGATAAGGGTGTGGTCCTTGGTTCAATTCCAAGATTGCTTAGAGA
+TTCGATACCTAAGAAAAAATGTGCTTCAATCTTTAGGACTCCATACCACATTGAACGTACGAAAAAATCCTTTAACTG
+AGAGTTTACAAATTCAACTAAAAGGGATTTGCAAAAAGTAACGCTAATGCTACAATTAAACTATAAATTGTTAAAGCT
+TCCATAAAAGCTAAACTTAATAATAATGTACTTCTAACTTTATCTTCAGTCTCAGGTTGACGACCGATGGCATTTACC
+GCATCTCCAGATAACAATCCTTGTCCAATCCCAGGACCTAATGACCCCAATCCAATCGCTAATCCAGCACTTAATGCA
+CTTGCAGCAGCTACAATTCCTTCCATAATGTTTAAAGGTATTTGCATAAAAAGTTAAGTGAAATTGCCCTTACCTTTT
+GTAAGGTTTCGATAGTGTCAAACATAAAACAAAACCTACCTAATTCCTGATCTCGCTAAAGTAGACTAAAGACTAACC
+ATTAAGTATATTCTATACACCTAACAGTTTTCGTATTTCGAAAAGAACAAACGCTAAGGACACATACACAAAGTTAAA
+CAACCTAAAATTCATGTTCATCTAATGGATCACGAACATTTAAGCTCTTTACCAGTGCATTAAAAGAAAAGGTTATGA
+AACTTCCACAAACAAACCCACTAAATGCGGCTCATAAAAGATATGCTTCGTTTATTTAAAATAAAATTTTAACTTCTT
+ACAAAATAAATTAATAAACAGCTTAGTAAAATGACCATATGTTCAATTATGAAACTGTGTTTAAACTTTTAAGGTAGT
+TTTTTAGTCTCCATAATAATTTATGAAAAAATTTGTCTGTTATGCCCATTCCACATTTAATATTTA" } ,
+                annot {
+                  {
+                    desc {
+                      name "Table1" } ,
+                    data
+                      ftable {
+                        {
+                          data
+                            gene {
+                              locus "trnL(tag)" } ,
+                          location
+                            int {
+                              from 160 ,
+                              to 240 ,
+                              strand minus ,
+                              id
+                                local
+                                  str "C_0" } } ,
+                        {
+                          data
+                            rna {
+                              type tRNA ,
+                              ext
+                                tRNA {
+                                  aa
+                                    ncbieaa 76 ,
+                                  anticodon
+                                    int {
+                                      from 204 ,
+                                      to 206 ,
+                                      strand minus ,
+                                      id
+                                        local
+                                          str "C_0" } } } ,
+                          location
+                            int {
+                              from 160 ,
+                              to 240 ,
+                              strand minus ,
+                              id
+                                local
+                                  str "C_0" } } ,
+                        {
+                          data
+                            gene {
+                              locus "trnR(tct)" } ,
+                          location
+                            int {
+                              from 243 ,
+                              to 315 ,
+                              strand minus ,
+                              id
+                                local
+                                  str "C_0" } } ,
+                        {
+                          data
+                            rna {
+                              type tRNA ,
+                              ext
+                                tRNA {
+                                  aa
+                                    ncbieaa 82 ,
+                                  anticodon
+                                    int {
+                                      from 279 ,
+                                      to 281 ,
+                                      strand minus ,
+                                      id
+                                        local
+                                          str "C_0" } } } ,
+                          location
+                            int {
+                              from 243 ,
+                              to 315 ,
+                              strand minus ,
+                              id
+                                local
+                                  str "C_0" } } ,
+                        {
+                          data
+                            gene {
+                              locus "ycf3" } ,
+                          location
+                            int {
+                              from 349 ,
+                              to 858 ,
+                              strand minus ,
+                              id
+                                local
+                                  str "C_0" } } ,
+                        {
+                          data
+                            gene {
+                              locus "orf337" } ,
+                          location
+                            int {
+                              from 911 ,
+                              to 1924 ,
+                              strand plus ,
+                              id
+                                local
+                                  str "C_0" } } ,
+                        {
+                          data
+                            gene {
+                              locus "trnE(ttc)" } ,
+                          location
+                            int {
+                              from 2004 ,
+                              to 2075 ,
+                              strand plus ,
+                              id
+                                local
+                                  str "C_0" } } ,
+                        {
+                          data
+                            rna {
+                              type tRNA ,
+                              ext
+                                tRNA {
+                                  aa
+                                    ncbieaa 69 ,
+                                  anticodon
+                                    int {
+                                      from 2037 ,
+                                      to 2039 ,
+                                      strand plus ,
+                                      id
+                                        local
+                                          str "C_0" } } } ,
+                          location
+                            int {
+                              from 2004 ,
+                              to 2075 ,
+                              strand plus ,
+                              id
+                                local
+                                  str "C_0" } } ,
+                        {
+                          data
+                            gene {
+                              locus "psbE" } ,
+                          location
+                            int {
+                              from 2087 ,
+                              to 2356 ,
+                              strand minus ,
+                              id
+                                local
+                                  str "C_0" } } ,
+                        {
+                          data
+                            gene {
+                              locus "psaC" } ,
+                          location
+                            int {
+                              from 2420 ,
+                              to 2662 ,
+                              strand minus ,
+                              id
+                                local
+                                  str "C_0" } } ,
+                        {
+                          data
+                            gene {
+                              locus "secA" } ,
+                          location
+                            int {
+                              from 2727 ,
+                              to 5243 ,
+                              strand minus ,
+                              id
+                                local
+                                  str "C_0" } } ,
+                        {
+                          data
+                            gene {
+                              locus "trnP(tgg)" } ,
+                          location
+                            int {
+                              from 5569 ,
+                              to 5642 ,
+                              strand plus ,
+                              id
+                                local
+                                  str "C_0" } } ,
+                        {
+                          data
+                            rna {
+                              type tRNA ,
+                              ext
+                                tRNA {
+                                  aa
+                                    ncbieaa 80 ,
+                                  anticodon
+                                    int {
+                                      from 5603 ,
+                                      to 5605 ,
+                                      strand plus ,
+                                      id
+                                        local
+                                          str "C_0" } } } ,
+                          location
+                            int {
+                              from 5569 ,
+                              to 5642 ,
+                              strand plus ,
+                              id
+                                local
+                                  str "C_0" } } ,
+                        {
+                          data
+                            gene {
+                              locus "trnV(tac)" } ,
+                          location
+                            int {
+                              from 6277 ,
+                              to 6349 ,
+                              strand minus ,
+                              id
+                                local
+                                  str "C_0" } } ,
+                        {
+                          data
+                            rna {
+                              type tRNA ,
+                              ext
+                                tRNA {
+                                  aa
+                                    ncbieaa 86 ,
+                                  anticodon
+                                    int {
+                                      from 6314 ,
+                                      to 6316 ,
+                                      strand minus ,
+                                      id
+                                        local
+                                          str "C_0" } } } ,
+                          location
+                            int {
+                              from 6277 ,
+                              to 6349 ,
+                              strand minus ,
+                              id
+                                local
+                                  str "C_0" } } ,
+                        {
+                          data
+                            gene {
+                              locus "psbA" } ,
+                          location
+                            int {
+                              from 6388 ,
+                              to 7428 ,
+                              strand minus ,
+                              id
+                                local
+                                  str "C_0" } } ,
+                        {
+                          data
+                            gene {
+                              locus "orf152" } ,
+                          location
+                            int {
+                              from 7502 ,
+                              to 7960 ,
+                              strand minus ,
+                              id
+                                local
+                                  str "C_0" } } ,
+                        {
+                          data
+                            gene {
+                              locus "rnl" } ,
+                          location
+                            int {
+                              from 8432 ,
+                              to 11271 ,
+                              strand minus ,
+                              id
+                                local
+                                  str "C_0" } } ,
+                        {
+                          data
+                            rna {
+                              type rRNA ,
+                              ext
+                                name "large subunit ribosomal RNA" } ,
+                          location
+                            int {
+                              from 8432 ,
+                              to 11271 ,
+                              strand minus ,
+                              id
+                                local
+                                  str "C_0" } } ,
+                        {
+                          data
+                            gene {
+                              locus "rns" } ,
+                          location
+                            int {
+                              from 11570 ,
+                              to 13133 ,
+                              strand minus ,
+                              id
+                                local
+                                  str "C_0" } } ,
+                        {
+                          data
+                            rna {
+                              type rRNA ,
+                              ext
+                                name "small subunit ribosomal RNA" } ,
+                          location
+                            int {
+                              from 11570 ,
+                              to 13133 ,
+                              strand minus ,
+                              id
+                                local
+                                  str "C_0" } } ,
+                        {
+                          data
+                            gene {
+                              locus "trnK(ttt)" } ,
+                          location
+                            int {
+                              from 13892 ,
+                              to 13963 ,
+                              strand minus ,
+                              id
+                                local
+                                  str "C_0" } } ,
+                        {
+                          data
+                            rna {
+                              type tRNA ,
+                              ext
+                                tRNA {
+                                  aa
+                                    ncbieaa 75 ,
+                                  anticodon
+                                    int {
+                                      from 13929 ,
+                                      to 13931 ,
+                                      strand minus ,
+                                      id
+                                        local
+                                          str "C_0" } } } ,
+                          location
+                            int {
+                              from 13892 ,
+                              to 13963 ,
+                              strand minus ,
+                              id
+                                local
+                                  str "C_0" } } ,
+                        {
+                          data
+                            gene {
+                              locus "trnY(gta)" } ,
+                          location
+                            int {
+                              from 13968 ,
+                              to 14050 ,
+                              strand minus ,
+                              id
+                                local
+                                  str "C_0" } } ,
+                        {
+                          data
+                            rna {
+                              type tRNA ,
+                              ext
+                                tRNA {
+                                  aa
+                                    ncbieaa 89 ,
+                                  anticodon
+                                    int {
+                                      from 14014 ,
+                                      to 14016 ,
+                                      strand minus ,
+                                      id
+                                        local
+                                          str "C_0" } } } ,
+                          location
+                            int {
+                              from 13968 ,
+                              to 14050 ,
+                              strand minus ,
+                              id
+                                local
+                                  str "C_0" } } ,
+                        {
+                          data
+                            gene {
+                              locus "trnN(gtt)" } ,
+                          location
+                            int {
+                              from 14064 ,
+                              to 14136 ,
+                              strand minus ,
+                              id
+                                local
+                                  str "C_0" } } ,
+                        {
+                          data
+                            rna {
+                              type tRNA ,
+                              ext
+                                tRNA {
+                                  aa
+                                    ncbieaa 78 ,
+                                  anticodon
+                                    int {
+                                      from 14101 ,
+                                      to 14103 ,
+                                      strand minus ,
+                                      id
+                                        local
+                                          str "C_0" } } } ,
+                          location
+                            int {
+                              from 14064 ,
+                              to 14136 ,
+                              strand minus ,
+                              id
+                                local
+                                  str "C_0" } } ,
+                        {
+                          data
+                            gene {
+                              locus "trnM(cat)" } ,
+                          location
+                            int {
+                              from 14181 ,
+                              to 14255 ,
+                              strand minus ,
+                              id
+                                local
+                                  str "C_0" } } ,
+                        {
+                          data
+                            rna {
+                              type tRNA ,
+                              ext
+                                tRNA {
+                                  aa
+                                    ncbieaa 77 ,
+                                  anticodon
+                                    int {
+                                      from 14218 ,
+                                      to 14220 ,
+                                      strand minus ,
+                                      id
+                                        local
+                                          str "C_0" } } } ,
+                          location
+                            int {
+                              from 14181 ,
+                              to 14255 ,
+                              strand minus ,
+                              id
+                                local
+                                  str "C_0" } } ,
+                        {
+                          data
+                            gene {
+                              locus "trnS(tga)" } ,
+                          location
+                            int {
+                              from 14270 ,
+                              to 14353 ,
+                              strand minus ,
+                              id
+                                local
+                                  str "C_0" } } ,
+                        {
+                          data
+                            rna {
+                              type tRNA ,
+                              ext
+                                tRNA {
+                                  aa
+                                    ncbieaa 83 ,
+                                  anticodon
+                                    int {
+                                      from 14317 ,
+                                      to 14319 ,
+                                      strand minus ,
+                                      id
+                                        local
+                                          str "C_0" } } } ,
+                          location
+                            int {
+                              from 14270 ,
+                              to 14353 ,
+                              strand minus ,
+                              id
+                                local
+                                  str "C_0" } } ,
+                        {
+                          data
+                            gene {
+                              locus "trnT(tgt)" } ,
+                          location
+                            int {
+                              from 14474 ,
+                              to 14545 ,
+                              strand plus ,
+                              id
+                                local
+                                  str "C_0" } } ,
+                        {
+                          data
+                            rna {
+                              type tRNA ,
+                              ext
+                                tRNA {
+                                  aa
+                                    ncbieaa 84 ,
+                                  anticodon
+                                    int {
+                                      from 14506 ,
+                                      to 14508 ,
+                                      strand plus ,
+                                      id
+                                        local
+                                          str "C_0" } } } ,
+                          location
+                            int {
+                              from 14474 ,
+                              to 14545 ,
+                              strand plus ,
+                              id
+                                local
+                                  str "C_0" } } ,
+                        {
+                          data
+                            gene {
+                              locus "trnI(gat)" } ,
+                          location
+                            int {
+                              from 14559 ,
+                              to 14630 ,
+                              strand plus ,
+                              id
+                                local
+                                  str "C_0" } } ,
+                        {
+                          data
+                            rna {
+                              type tRNA ,
+                              ext
+                                tRNA {
+                                  aa
+                                    ncbieaa 73 ,
+                                  anticodon
+                                    int {
+                                      from 14591 ,
+                                      to 14593 ,
+                                      strand plus ,
+                                      id
+                                        local
+                                          str "C_0" } } } ,
+                          location
+                            int {
+                              from 14559 ,
+                              to 14630 ,
+                              strand plus ,
+                              id
+                                local
+                                  str "C_0" } } ,
+                        {
+                          data
+                            gene {
+                              locus "atpH" } ,
+                          location
+                            int {
+                              from 14730 ,
+                              to 14972 ,
+                              strand minus ,
+                              id
+                                local
+                                  str "C_0" } } } } } } ,
+              seq {
+                id {
+                  local
+                    str "G-ycf3" } ,
+                descr {
+                  title "photosystem I assembly protein ycf3 [Genus species]" ,
+                  molinfo {
+                    biomol peptide ,
+                    tech concept-trans } } ,
+                inst {
+                  repr raw ,
+                  mol aa ,
+                  length 169 ,
+                  seq-data
+                    ncbieaa "MIVNLIDKSLTSLADVITNVVATPETHKQSFLCYRLALTYQLQGSYAVA
+LKLYQRALKLEDSPKQRSRILVSMGTLLQRAGFEVAAYRTYELALQNNNASAQTWYNLGSITFYRGRKVFRLHDYYGA
+LEWYELTVLFWKRSRQLAPGKYLKAERWLRDYDFIVNFLTQN" } ,
+                annot {
+                  {
+                    data
+                      ftable {
+                        {
+                          data
+                            prot {
+                              name {
+                                "photosystem I assembly protein ycf3" } } ,
+                          location
+                            int {
+                              from 0 ,
+                              to 168 ,
+                              id
+                                local
+                                  str "G-ycf3" } } } } } } ,
+              seq {
+                id {
+                  local
+                    str "G-orf337" } ,
+                descr {
+                  title "hypothetical protein [Genus species]" ,
+                  molinfo {
+                    biomol peptide ,
+                    tech concept-trans } } ,
+                inst {
+                  repr raw ,
+                  mol aa ,
+                  length 337 ,
+                  seq-data
+                    ncbieaa "MYVWWYRSMLRLSKIYLIWVLILWSLVILYFPQIKPNTKFFFFLLQENN
+FFPLTFTFFLLLLFWLCTLLSCTVLDQSFIFKYKHFSFLERTKFLSLYSNFHPYNVSGDFKEQKYLFKNNYLSLYSHL
+IVSFYLIKQQIRFLVEEIFNQKGILQQNTPQFTVLLENPTSKTHFSPMLNLQSSQIFSISSTLNSSENINFSLLDNSA
+REILYQTLPINTPFSFLGCNLNFTKLDETFILHKTSLKLLEVPLNNKSTWLINYWMKSKNEWEIFFLNFLRSRSMWNE
+DWHEIVMNASVVDSWNFFNYNLTLHTENFSILYIFYFLLVGTYLNCFNSIKIKI" } ,
+                annot {
+                  {
+                    data
+                      ftable {
+                        {
+                          data
+                            prot {
+                              name {
+                                "hypothetical protein" } } ,
+                          location
+                            int {
+                              from 0 ,
+                              to 336 ,
+                              id
+                                local
+                                  str "G-orf337" } } } } } } ,
+              seq {
+                id {
+                  local
+                    str "G-psbE" } ,
+                descr {
+                  title "photosystem II cytochrome b559 alpha subunit [Genus
+ species]" ,
+                  molinfo {
+                    biomol peptide ,
+                    tech concept-trans } } ,
+                inst {
+                  repr raw ,
+                  mol aa ,
+                  length 89 ,
+                  seq-data
+                    ncbieaa "MQQKIITGGSTGERPFTEILTSVRYWLIHIVTIPCIFLTGFLFVKTGIP
+YKAFGTPRNSQYFTKNRQQVPLVNDRFQVVQELEYLTESL" } ,
+                annot {
+                  {
+                    data
+                      ftable {
+                        {
+                          data
+                            prot {
+                              name {
+                                "photosystem II cytochrome b559 alpha subunit" } } ,
+                          location
+                            int {
+                              from 0 ,
+                              to 88 ,
+                              id
+                                local
+                                  str "G-psbE" } } } } } } ,
+              seq {
+                id {
+                  local
+                    str "G-psaC" } ,
+                descr {
+                  title "photosystem I subunit VII (iron-sulfur center) [Genus
+ species]" ,
+                  molinfo {
+                    biomol peptide ,
+                    tech concept-trans } } ,
+                inst {
+                  repr raw ,
+                  mol aa ,
+                  length 80 ,
+                  seq-data
+                    ncbieaa "MHNVSIYTTCIGCTQCVRACPTEVLTMATWDHCRALQIACADTLYDCIG
+CKRCETACPTDYLSIRVELGTETYSSMGLVY" } ,
+                annot {
+                  {
+                    data
+                      ftable {
+                        {
+                          data
+                            prot {
+                              name {
+                                "photosystem I subunit VII (iron-sulfur
+ center)" } } ,
+                          location
+                            int {
+                              from 0 ,
+                              to 79 ,
+                              id
+                                local
+                                  str "G-psaC" } } } } } } ,
+              seq {
+                id {
+                  local
+                    str "G-secA" } ,
+                descr {
+                  title "preprotein-translocase subunit a [Genus species]" ,
+                  molinfo {
+                    biomol peptide ,
+                    tech concept-trans } } ,
+                inst {
+                  repr raw ,
+                  mol aa ,
+                  length 838 ,
+                  seq-data
+                    ncbieaa "MKTIFSQSEVYRQYLSAFTKKDLQKLTKYQFYQNNRNSFNKILQKLILF
+QTLIYKTSKYLAYDTQILAALYLHLGTVVNMKTGEGKTLASVLALLLHSSKQNGLHMLTTSDYLAQRDRNWLISLSSW
+MKSSVGLITSSTALNKRLKEYFNDITYLNNTELGFDYLRDSRVINYGKRIQRPFFFGLVDEIDSILIDSAVTPLILST
+TSNESVSRLNWFLILDELVKFLKFQEDFLLDYNLNLVYLTQKGVLLIKMLLNIDSTKNTKQTLIKIDNWIQVLLNILK
+ARIFYRNQRDYILINKTIYIVDSLTGRILPGRRWNNGLHQAVESKECVPVNPDFSTLASITYQNLYNLYPILAGMTGT
+TDATRNEFLSIFALSIKQVPTFKPSFRETLNTVITQTELDKWRLVSINSRSSSLEKGLPLLIVTSSIDKSELLSELYL
+YNKIPHQLVNAKPDYAKEEENIVCMAGRKHCITLSTRMLSRGVDILIGGNILYNNVRLVDLLNCSSNHIQNPIFFANF
+LQNNSRLFLKENCIKALSLKEAYNYYGSNFNEVKGNWLFLNYGKAGLGFLPLLLQLNETNWILQNSGLFVINTEKSST
+PRVDAQIAGRCGRQGNPGKTQLYVSLDDLFFKQVNKKVLKKLGFYNLFGQNWLKSNIEVEKTIINPIQIYVTSLNYES
+RKQRSLWKLVANQLYKAMQKMRNDLWTYRAVDVFILKQLLVCYTRKNKTKKAFGEKTTFDPVSPNNCFSLLDRWIYYV
+VYKWILLSWVTTSFYYQQEIRFLLEYLDNQWNIYIYFYDTFIENLFLQQWQNKSLFFIVTNFIQRQLFYIKSSYTKNF
+VMYVENMFL" } ,
+                annot {
+                  {
+                    data
+                      ftable {
+                        {
+                          data
+                            prot {
+                              name {
+                                "preprotein-translocase subunit a" } } ,
+                          location
+                            int {
+                              from 0 ,
+                              to 837 ,
+                              id
+                                local
+                                  str "G-secA" } } } } } } ,
+              seq {
+                id {
+                  local
+                    str "G-psbA" } ,
+                descr {
+                  title "photosystem II reaction center protein D1 [Genus
+ species]" ,
+                  molinfo {
+                    biomol peptide ,
+                    tech concept-trans } } ,
+                inst {
+                  repr raw ,
+                  mol aa ,
+                  length 346 ,
+                  seq-data
+                    ncbieaa "MKSKKNLTWVRNIARSVFNFVQNTERRLYIGWFGLIMIPNLLLAVSVFI
+AAFVAAPPVDIDGIREPVSGSLLYGNNIISGAVVPSSNAIGMHLYTVWDALCIEEWLYNGGPYQFVVLHFFIGVCAYL
+GREWELSYRLGMRPWIFVAFSAPVAAASAVFVVYPIGQGSFSDGMPLGISGTFNFMLVFQAEHNILMHPFHMAGVAGV
+FGGSLFSAMHGSLVSSTLISMTSEDESPNYGYKFGQEYETYNIVAAHGYFGRLIFQFASFNNSRALHFFLAIWPVVGI
+WLTAMGISTMAFNLNGFNFNQSIVDSQGRVISSWADILNRANLGMEVMHERNAHNFPLDLAIA" } ,
+                annot {
+                  {
+                    data
+                      ftable {
+                        {
+                          data
+                            prot {
+                              name {
+                                "photosystem II reaction center protein D1" } } ,
+                          location
+                            int {
+                              from 0 ,
+                              to 345 ,
+                              id
+                                local
+                                  str "G-psbA" } } } } } } ,
+              seq {
+                id {
+                  local
+                    str "G-orf152" } ,
+                descr {
+                  title "hypothetical protein [Genus species]" ,
+                  molinfo {
+                    biomol peptide ,
+                    tech concept-trans } } ,
+                inst {
+                  repr raw ,
+                  mol aa ,
+                  length 152 ,
+                  seq-data
+                    ncbieaa "MYVSLLGLILNLFLLELSFISNHNNILSITNLYEASRFFIIICFVVTLG
+RSLCQLFLFEVSLETLFFATLSGWLILFTQNSIPASSKLLNLISPIFYSQWLYGHVSLVLIAYNYLVLSALCFLVIYN
+FTTGKVFQSQPFYQKDIEQIPTRFY" } ,
+                annot {
+                  {
+                    data
+                      ftable {
+                        {
+                          data
+                            prot {
+                              name {
+                                "hypothetical protein" } } ,
+                          location
+                            int {
+                              from 0 ,
+                              to 151 ,
+                              id
+                                local
+                                  str "G-orf152" } } } } } } ,
+              seq {
+                id {
+                  local
+                    str "G-atpH" } ,
+                descr {
+                  title "ATP synthase CF0 subunit III [Genus species]" ,
+                  molinfo {
+                    biomol peptide ,
+                    tech concept-trans } } ,
+                inst {
+                  repr raw ,
+                  mol aa ,
+                  length 80 ,
+                  seq-data
+                    ncbieaa "MEGIVAAASALSAGLAIGLGSLGPGIGQGLLSGDAVNAIGRQPETEDKV
+RSTLLLSLAFMEALTIYSLIVALALLFANPF" } ,
+                annot {
+                  {
+                    data
+                      ftable {
+                        {
+                          data
+                            prot {
+                              name {
+                                "ATP synthase CF0 subunit III" } ,
+                              ec {
+                                "7.1.2.2" } } ,
+                          location
+                            int {
+                              from 0 ,
+                              to 79 ,
+                              id
+                                local
+                                  str "G-atpH" } } } } } } } ,
+            annot {
+              {
+                data
+                  ftable {
+                    {
+                      data
+                        cdregion {
+                          frame one ,
+                          code {
+                            id 4 } } ,
+                      product
+                        whole
+                          local
+                            str "G-ycf3" ,
+                      location
+                        int {
+                          from 349 ,
+                          to 858 ,
+                          strand minus ,
+                          id
+                            local
+                              str "C_0" } } ,
+                    {
+                      data
+                        cdregion {
+                          frame one ,
+                          code {
+                            id 4 } } ,
+                      product
+                        whole
+                          local
+                            str "G-orf337" ,
+                      location
+                        int {
+                          from 911 ,
+                          to 1924 ,
+                          strand plus ,
+                          id
+                            local
+                              str "C_0" } } ,
+                    {
+                      data
+                        cdregion {
+                          frame one ,
+                          code {
+                            id 4 } } ,
+                      product
+                        whole
+                          local
+                            str "G-psbE" ,
+                      location
+                        int {
+                          from 2087 ,
+                          to 2356 ,
+                          strand minus ,
+                          id
+                            local
+                              str "C_0" } } ,
+                    {
+                      data
+                        cdregion {
+                          frame one ,
+                          code {
+                            id 4 } } ,
+                      product
+                        whole
+                          local
+                            str "G-psaC" ,
+                      location
+                        int {
+                          from 2420 ,
+                          to 2662 ,
+                          strand minus ,
+                          id
+                            local
+                              str "C_0" } } ,
+                    {
+                      data
+                        cdregion {
+                          frame one ,
+                          code {
+                            id 4 } } ,
+                      product
+                        whole
+                          local
+                            str "G-secA" ,
+                      location
+                        int {
+                          from 2727 ,
+                          to 5243 ,
+                          strand minus ,
+                          id
+                            local
+                              str "C_0" } } ,
+                    {
+                      data
+                        cdregion {
+                          frame one ,
+                          code {
+                            id 4 } } ,
+                      product
+                        whole
+                          local
+                            str "G-psbA" ,
+                      location
+                        int {
+                          from 6388 ,
+                          to 7428 ,
+                          strand minus ,
+                          id
+                            local
+                              str "C_0" } } ,
+                    {
+                      data
+                        cdregion {
+                          frame one ,
+                          code {
+                            id 4 } } ,
+                      product
+                        whole
+                          local
+                            str "G-orf152" ,
+                      location
+                        int {
+                          from 7502 ,
+                          to 7960 ,
+                          strand minus ,
+                          id
+                            local
+                              str "C_0" } } ,
+                    {
+                      data
+                        cdregion {
+                          frame one ,
+                          code {
+                            id 4 } } ,
+                      product
+                        whole
+                          local
+                            str "G-atpH" ,
+                      location
+                        int {
+                          from 14730 ,
+                          to 14972 ,
+                          strand minus ,
+                          id
+                            local
+                              str "C_0" } } } } } } } } } }

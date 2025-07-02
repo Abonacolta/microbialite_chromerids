@@ -1,0 +1,125 @@
+>Feature C_0 Table1
+241	161	gene
+			gene	trnL(tag)
+241	161	tRNA
+			product	transfer RNA Leucine
+			protein_id	lcl| G-trnL
+			anticodon	(pos:207..205,aa:l)
+316	244	gene
+			gene	trnR(tct)
+316	244	tRNA
+			product	transfer RNA Arginine
+			protein_id	lcl| G-trnR
+			anticodon	(pos:282..280,aa:r)
+859	350	gene
+			gene	ycf3
+859	350	CDS
+			product	photosystem I assembly protein ycf3
+			protein_id	lcl| G-ycf3
+912	1925	gene
+			gene	orf337
+912	1925	CDS
+			product	hypothetical protein
+			protein_id	lcl| G-orf337
+2005	2076	gene
+			gene	trnE(ttc)
+2005	2076	tRNA
+			product	Glutamate
+			protein_id	lcl| G-trnE
+			anticodon	(pos:2038..2040,aa:e)
+2357	2088	gene
+			gene	psbE
+2357	2088	CDS
+			product	photosystem II cytochrome b559 alpha subunit
+			protein_id	lcl| G-psbE
+2663	2421	gene
+			gene	psaC
+2663	2421	CDS
+			product	photosystem I subunit VII (iron-sulfur center)
+			protein_id	lcl| G-psaC
+5244	2728	gene
+			gene	secA
+5244	2728	CDS
+			product	preprotein-translocase subunit a
+			protein_id	lcl| G-secA
+5570	5643	gene
+			gene	trnP(tgg)
+5570	5643	tRNA
+			product	transfer RNA Proline
+			protein_id	lcl| G-trnP
+			anticodon	(pos:5604..5606,aa:p)
+6350	6278	gene
+			gene	trnV(tac)
+6350	6278	tRNA
+			product	transfer RNA Valine
+			protein_id	lcl| G-trnV
+			anticodon	(pos:6317..6315,aa:v)
+7429	6389	gene
+			gene	psbA
+7429	6389	CDS
+			product	photosystem II reaction center protein D1
+			protein_id	lcl| G-psbA
+7961	7503	gene
+			gene	orf152
+7961	7503	CDS
+			product	hypothetical protein
+			protein_id	lcl| G-orf152
+11272	8433	gene
+			gene	rnl
+11272	8433	rRNA
+			product	large subunit ribosomal RNA
+			protein_id	lcl| G-rnl
+13134	11571	gene
+			gene	rns
+13134	11571	rRNA
+			product	small subunit ribosomal RNA
+			protein_id	lcl| G-rns
+13964	13893	gene
+			gene	trnK(ttt)
+13964	13893	tRNA
+			product	transfer RNA Lysine
+			protein_id	lcl| G-trnK
+			anticodon	(pos:13932..13930,aa:k)
+14051	13969	gene
+			gene	trnY(gta)
+14051	13969	tRNA
+			product	transfer RNA Tyrosine
+			protein_id	lcl| G-trnY
+			anticodon	(pos:14017..14015,aa:y)
+14137	14065	gene
+			gene	trnN(gtt)
+14137	14065	tRNA
+			product	transfer RNA Asparagine
+			protein_id	lcl| G-trnN
+			anticodon	(pos:14104..14102,aa:n)
+14256	14182	gene
+			gene	trnM(cat)
+14256	14182	tRNA
+			product	transfer RNA Methionine
+			protein_id	lcl| G-trnM
+			anticodon	(pos:14221..14219,aa:m)
+14354	14271	gene
+			gene	trnS(tga)
+14354	14271	tRNA
+			product	transfer RNA Serine
+			protein_id	lcl| G-trnS
+			anticodon	(pos:14320..14318,aa:s)
+14475	14546	gene
+			gene	trnT(tgt)
+14475	14546	tRNA
+			product	transfer RNA Threonine
+			protein_id	lcl| G-trnT
+			anticodon	(pos:14507..14509,aa:t)
+14560	14631	gene
+			gene	trnI(gat)
+14560	14631	tRNA
+			product	transfer RNA Isoleucine
+			protein_id	lcl| G-trnI
+			anticodon	(pos:14592..14594,aa:i)
+14973	14731	gene
+			gene	atpH
+14973	14731	CDS
+			product	ATP synthase CF0 subunit III
+			protein_id	lcl| G-atpH
+			EC_number	3.6.3.14
+
